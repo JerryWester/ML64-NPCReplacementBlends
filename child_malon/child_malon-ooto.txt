@@ -1,0 +1,95 @@
+DICTIONARY
+    //
+    // For use with decompressed 1.0 U OoT only!
+    //
+    VROM_CODE           0x00A87000           // start of code within rom
+    TABLE_OBJECT        0xE7F58              // start of object table within code
+    TABLE_ACTOR         0xD7490              // start of actor table within code
+    TABLE_PARTICLE      0xD6BA0              // start of particle table within code
+    VROM_OBJ            O_0xE0               // object to overwrite
+
+    HIERARCHY_CODE      0x0
+
+    SEG                 0x06000000           // ram segment
+
+    OBJ_MA2             0x00E0               // object_link_boy object number
+
+    // Hierarchy
+    
+    DL_WAIST        0x004C98    "Limb 0"
+    DL_LTHIGH       0x004D98    "Limb 1"
+    DL_LSHIN        0x004DF0    "Limb 2"
+    DL_LFOOT        0x004F50    "Limb 3"
+    DL_RTHIGH       0x005098    "Limb 4"
+    DL_RSHIN        0x0050F0    "Limb 5"
+    DL_RFOOT        0x005250    "Limb 6"
+    DL_TORSO        0x005398    "Limb 7"
+    DL_LSHOULDER    0x0057E8    "Limb 8"
+    DL_LFOREARM     0x0059A0    "Limb 9"
+    DL_LHAND        0x005AB0    "Limb 10"
+    DL_RSHOULDER    0x005C58    "Limb 11"
+    DL_RFOREARM     0x005E10    "Limb 12"
+    DL_RHAND        0x005F20    "Limb 13"
+    DL_HEAD         0x0060C8    "Limb 14"
+    DL_USKIRT       0x006A98    "Limb 16"
+    DL_LSKIRT       0x006BD0    "Limb 17"
+END
+
+OBJECT POOL=0x1800,0x400
+    LUT_ZZ_MODLOADER:
+        HexString(4D 4F 44 4C 4F 41 44 45 52 36 34 70 00 00 00 11);
+
+    LUT_DL_WAIST:
+        CallList( DL_WAIST );
+
+    LUT_DL_LTHIGH:
+        CallList( DL_LTHIGH );
+
+    LUT_DL_LSHIN:
+        CallList( DL_LSHIN );
+
+    LUT_DL_LFOOT:
+        CallList( DL_LFOOT );
+
+    LUT_DL_RTHIGH:
+        CallList( DL_RTHIGH );
+
+    LUT_DL_RSHIN:
+        CallList( DL_RSHIN );
+
+    LUT_DL_RFOOT:
+        CallList( DL_RFOOT );
+
+    LUT_DL_TORSO:
+        CallList( DL_TORSO );
+
+    LUT_DL_LSHOULDER:
+        CallList( DL_LSHOULDER );
+
+    LUT_DL_LFOREARM:
+        CallList( DL_LFOREARM );
+
+    LUT_DL_LHAND:
+        CallList( DL_LHAND );
+
+    LUT_DL_RSHOULDER:
+        CallList( DL_RSHOULDER );
+
+    LUT_DL_RFOREARM:
+        CallList( DL_RFOREARM );
+
+    LUT_DL_RHAND:
+        CallList( DL_RHAND );
+
+    LUT_DL_HEAD:
+        CallList( DL_HEAD );
+
+    LUT_DL_USKIRT:
+        CallList( DL_USKIRT );
+
+    LUT_DL_LSKIRT:
+        CallList( DL_LSKIRT );
+END
+
+REPOINT
+END
